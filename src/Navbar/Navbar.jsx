@@ -6,9 +6,9 @@ import searchFirebase from "../Search/searchFirebase";
 import { useSelector } from "react-redux";
 import './Navbar.css'; // Import the CSS file for styling
 
-import slick2 from "/slick2.png"
-import luxpret  from "/luxpt.png"
-import womenwear from "/unstit.jpg"
+import slick2 from "../assets/slick2.png";
+import luxpret from "../assets/luxpt.png";
+import womenwear from "../assets/unstit.jpg";
 
 
 

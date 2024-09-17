@@ -1,5 +1,4 @@
-  // App.jsx
-
+ 
   import React from "react";
   import { Cards } from "../Components/Cards";
   import {Footer} from "../Components/Footer"
