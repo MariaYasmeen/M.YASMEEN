@@ -80,7 +80,7 @@ const wishlistItems = useSelector((state) => state.wishlist);
       <div className="fa-iconcss">
         <div className="row align-items-center justify-content-between">
         
-        <div className="col text-center">
+        <div className="col text-center hidingicons">
             <Link to="#" className="text-decoration-none">
               <i className="fa-solid fa-clipboard-question"></i>
             </Link>
@@ -96,11 +96,11 @@ const wishlistItems = useSelector((state) => state.wishlist);
             </Link>
           </div>
     
-          <div className="col text-center">
+          <div className="col text-center herotext">
             <Link
               to="/"
               className="text-decoration-none text-center"
-              style={{ color: "black", fontSize: "40px", letterSpacing: "2px" }}
+              style={{ color: "black", letterSpacing: "2px" }}
             >
               M.YASMEEN
             </Link>

@@ -143,7 +143,7 @@
   
   .product-image img {
     width: 100%;
-    height: auto;
+    height: 600pxss;
     opacity: 0; /* Hide image initially */
     transition: opacity 0.3s ease-in;
   }
@@ -155,4 +155,26 @@
   .product-card.loaded .product-image img {
     opacity: 1; /* Fully visible after loading */
   }
+
+  @media (min-width: 390px) {
+    .product-card {
+      width: 359px;
+    }
+  }
   
+  @media (min-width: 375px) {
+    .product-card {
+      width: 339px;
+    }
+  }
+
+  @media (min-width: 360px) {
+    .product-card {
+      width: 319px;
+    }
+  }
+  @media (min-width: 344px) {
+    .product-card {
+      width: 310px;
+    }
+  }

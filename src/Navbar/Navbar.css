@@ -186,6 +186,9 @@
     position: relative;
   }
   
+  .herotext{
+    font-size: 40px;
+  }
   @media (max-width: 991.98px) {
     .navbar {
       width: 50%;
@@ -230,3 +233,42 @@
    
   }
   
+  @media (max-width: 521px) {
+    .fa-iconcss i{
+      font-size: 18px;
+      padding: 3px; 
+      }
+      .herotext{
+        font-size: 33px;
+      }
+  
+  }
+  @media (max-width: 521px) {
+    .fa-iconcss i{
+      font-size: 16px; 
+      }
+      .herotext{
+        font-size: 29px;
+      }
+  
+  }
+
+  @media (max-width: 349px) {
+    .fa-iconcss i{
+      font-size: 14px; 
+      }
+      .herotext{
+        font-size: 24px;
+      }
+  
+  }
+
+  @media (max-width: 293px) {
+    .fa-iconcss i{
+      font-size: 14px; 
+      }
+      .herotext{
+        font-size: 24px;
+      }
+  
+  }
