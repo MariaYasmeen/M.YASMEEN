@@ -4,6 +4,8 @@ import React, { useState, useEffect } from "react";
 import useFetchCollection from "../Utils/useFetchCollection";
 import { Helmet } from "react-helmet-async";
 import LoaderSc from "../Components/LoaderSc";
+import { Navbar } from "../Navbar/Navbar";
+import { Footer } from "../Components/Footer";
 
 const Bridals = () => {
     const { data: products, loading, error } = useFetchCollection("Bridals");
@@ -39,6 +41,7 @@ const Bridals = () => {
         ))}
       </div>
     </div>
+    <Footer />
     </>
   );
 };

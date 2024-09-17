@@ -108,7 +108,7 @@ export const Product = () => {
           </p>
         </div>
       </div>
-      {/* <Footer /> */}
+      <Footer/>
     </>
   );
 };

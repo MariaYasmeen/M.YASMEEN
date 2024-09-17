@@ -43,6 +43,7 @@ const Couture = () => {
         />
       ))}
     </div>
+    <Footer />
     </>
   );
 };

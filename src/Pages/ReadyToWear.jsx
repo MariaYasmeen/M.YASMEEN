@@ -27,6 +27,7 @@ const ReadyToWear = () => {
   };
 
   return (
+    <>
     <div>
       <Helmet>
         <title>Ready To Wear - {category} - M.Yasmeen</title>
@@ -49,6 +50,8 @@ const ReadyToWear = () => {
         ))}
       </div>
     </div>
+    <Footer />
+    </>
   );
 };
 

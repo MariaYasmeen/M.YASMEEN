@@ -4,6 +4,7 @@ import image2 from '../assets/luxrypret.png';
 import image3 from '../assets/mommyandme.png';       
 import { Navbar } from '../Navbar/Navbar';
 import { Link } from 'react-router-dom';
+import { Footer } from '../Components/Footer';
 
 const RTWHomePg = () => {
  
@@ -15,6 +16,7 @@ const RTWHomePg = () => {
       <Link to="/luxury-formals"> <img src={image1} class="img-fluid" alt="..." /></Link>
       <Link to="/luxury-pret"> <img src={image2} class="img-fluid" alt="..." /></Link>
        </div>
+       <Footer />
     </>
   );
 };

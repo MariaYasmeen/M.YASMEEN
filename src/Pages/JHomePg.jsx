@@ -3,6 +3,7 @@ import image1 from '../assets/JEWELRY.png';
 import { Navbar } from '../Navbar/Navbar';
 import { Link } from 'react-router-dom';
 import BoxButton from '../Animations/BoxButton';
+import { Footer } from '../Components/Footer';
 
 const JHomePg = () => {
   return (
@@ -74,6 +75,7 @@ const JHomePg = () => {
         </div>
 
       </div>
+      <Footer />
     </>
   );
 };

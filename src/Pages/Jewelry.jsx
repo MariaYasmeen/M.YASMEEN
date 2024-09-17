@@ -26,6 +26,7 @@ const Jewelry = () => {
   };
 
   return (
+    <>
     <div>
       <Helmet>
         <title>Jewelry - {category} - M.Yasmeen</title>
@@ -48,6 +49,8 @@ const Jewelry = () => {
         ))}
       </div>
     </div>
+    <Footer/>
+    </>
   );
 };
 

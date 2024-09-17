@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from "react";
 import { Helmet } from "react-helmet-async";
 import { Navbar } from "../Navbar/Navbar";
+import { Footer } from "../Components/Footer";
 
 const ShopedItems = () => {
     const [checkedOutItems, setCheckedOutItems] = useState([]);
@@ -53,6 +54,7 @@ const ShopedItems = () => {
     </div>
     </div>
     </div>
+    <Footer />
     </>
   );
 };
