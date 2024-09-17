@@ -118,7 +118,7 @@ function SignUp() {
           </button>
 
           <h6 style={{ marginTop: "20px" }}>
-            Already have an account? <Link to='/signin'>Sign In</Link>
+            Already have an account? <Link to='/account/signin'>Sign In</Link>
           </h6>
 
           <p className="mt-5 mb-3 text-body-secondary">© 2024 Developed by Maria Yasmeen</p>

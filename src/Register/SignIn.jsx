@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import { useAuth } from '../Context/UserAuthContext';
 import { Link, useNavigate } from 'react-router-dom';
 import "./Register.css";
+import { Navbar } from '../Navbar/Navbar';
 
 function SignIn() {
   const [email, setEmail] = useState("");
@@ -23,10 +24,12 @@ function SignIn() {
   };
 
   return (
+    <>
+    <Navbar />
     <div className="signupcss">
       <main className="signin-css">
         <form onSubmit={handleSubmit}>
-          <h1 className="h6 mb-3 fw-normal">Please Sign In</h1>
+          <h1 className="h6 mb-3 text-center py-3">Please Sign In</h1>
 
           {error && <div className="alert alert-danger">{error}</div>}
 
@@ -82,6 +85,7 @@ function SignIn() {
         </form>
       </main>
     </div>
+    </>
   );
 }
 
