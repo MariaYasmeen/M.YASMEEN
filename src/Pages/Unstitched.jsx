@@ -17,7 +17,7 @@ const Unstitched = () => {
   }
 
   if (error) {
-    return <div>{error}</div>;S
+    return <div>{error}</div>;
   }
 
   return (
