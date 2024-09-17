@@ -18,39 +18,29 @@ export const Product = () => {
   const collectionName = location.state.collectionName;
 
   const dispatch = useDispatch();
-
   const { data: products, loading, error } = useFetchCollection(collectionName);
 
   const wishlist = useSelector(state => state.wishlist);
   const cart = useSelector(state => state.cart);
 
-  if (loading) {
-    return <LoaderSc />;
-  }
-
-  if (error) {
-    return <div className="error-message">{error}</div>;
-  }
+  if (loading) return <LoaderSc />;
+  if (error) return <div className="error-message">{error}</div>;
 
   const createSlug = (text) => {
     return text.toLowerCase().replace(/[^a-z0-9]+/g, '-').replace(/(^-|-$)+/g, '');
   };
 
   const item = products.find((prod) => prod.title && createSlug(prod.title) === title);
-
-  if (!item) {
-    return <div className="product-not-found">Product not found</div>;
-  }
+  if (!item) return <div className="product-not-found">Product not found</div>;
 
   const { image1, image2, image3, image4, title: itemTitle, price, desc, id } = item;
-
   const images = [image1, image2, image3, image4].filter(image => image); // Filter out empty image URLs
 
   const isInCart = cart.some((product) => product.id === id);
   const isInWishlist = wishlist.some((product) => product.id === id);
 
   const handleWishlist = () => {
-    AddInWishList(item, wishlist, null, dispatch, addToWishlist, delFromWishlist); // Wishlist logic handled here
+    AddInWishList(item, wishlist, dispatch, addToWishlist, delFromWishlist);
   };
 
   const handleCart = () => {

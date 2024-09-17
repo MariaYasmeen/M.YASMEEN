@@ -3,7 +3,10 @@
   import { Cards } from "../Components/Cards";
   import {Footer} from "../Components/Footer"
   import { Navbar } from "../Navbar/Navbar";
-  
+  import slider1 from "../assets//slider1.png";
+  import slider3 from "../assets/slider3.png";
+  import slider4 from "../assets/slider4.png";
+  import slider5 from "../assets/slider5.png";
   const Home = () => {
 
     return (
@@ -13,19 +16,19 @@
         <div id="carouselExampleAutoplaying" className="carousel slide" data-bs-ride="carousel">
     <div className="carousel-inner">
       <div className="carousel-item active">
-        <img src="/slider3.png" className="d-block w-100 img-fluid" alt="..." />
+        <img src={slider3} className="d-block w-100 img-fluid" alt="..." />
       </div>
       <div className="carousel-item active">
-        <img src="/slider1.png" className="d-block w-100 img-fluid" alt="..." />
+        <img src={slider1} className="d-block w-100 img-fluid" alt="..." />
       </div>
       <div className="carousel-item">
-        <img src="/slider5.png" className="d-block w-100 img-fluid" alt="..." />
+        <img src={slider5} className="d-block w-100 img-fluid" alt="..." />
       </div>
       <div className="carousel-item">
-        <img src="/slider4.png" className="d-block w-100 img-fluid" alt="..." />
+        <img src={slider4} className="d-block w-100 img-fluid" alt="..." />
       </div>
       <div className="carousel-item">
-        <img src="/slider5.png" className="d-block w-100 img-fluid" alt="..." />
+        <img src={slider5} className="d-block w-100 img-fluid" alt="..." />
       </div>
      
     </div>

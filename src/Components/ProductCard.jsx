@@ -1,10 +1,9 @@
 import React, { useState, useEffect } from "react";
 import { Link, useNavigate } from "react-router-dom";
 import { Helmet } from "react-helmet-async";
-import { useDispatch, useSelector } from "react-redux"; 
+import { useDispatch, useSelector } from "react-redux";
 import { addToWishlist, delFromWishlist } from "../Redux/WishlistSlice";
 import useFetchCollection from "../Utils/useFetchCollection";
-import { AddInWishList } from "../Functions/AddInWishList";
 import { useTitle } from "../Context/TitleContext";
 import ButtonFlip from "../Animations/ButtonFlip";
 import ImageLoader from "./ImageLoader"; // Import the ImageLoader component
@@ -28,7 +27,7 @@ export const ProductCard = ({
   const [imageLoaded, setImageLoaded] = useState(false);
   const navigate = useNavigate();
   const dispatch = useDispatch();
-  
+
   const wishlist = useSelector((state) => state.wishlist);
   const isInWishlist = wishlist.some((item) => item.id === id);
   const { data: products } = useFetchCollection(collectionName);
@@ -45,7 +44,6 @@ export const ProductCard = ({
     } else {
       dispatch(addToWishlist(item));
     }
-    AddInWishList(item, wishlist, dispatch);
   };
 
   const handleQuickView = () => {
@@ -62,7 +60,7 @@ export const ProductCard = ({
   return (
     <>
       <Helmet>
-        <meta name="description" content={`See new Collection for Men.`} />
+        <meta name="description" content={`Check out ${title} from our collection.`} />
       </Helmet>
       <div
         className={`product-card ${imageLoaded ? "loaded" : "loading"}`}

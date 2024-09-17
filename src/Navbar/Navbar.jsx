@@ -253,38 +253,7 @@ const wishlistItems = useSelector((state) => state.wishlist);
               </li>
               
     
-              <li className="nav-item dropdown link-hover">
-                <Link to =""
-                  className="nav-link dropdown-toggle"
-                    
-                  data-bs-toggle="dropdown"
-                  aria-expanded="false"
-                >
-                  SALE
-                </Link>
-                <ul className="dropdown-menu">
-                  <li>
-                    <Link to ="" className="dropdown-item"   >
-                      <img src={womenwear} style={{ width: "250px" }} alt="Dropdown Item" />
-                    </Link>
-                  </li>
-                  <li>
-                    <Link to ="" className="dropdown-item"   >
-                      Action
-                    </Link>
-                  </li>
-                  <li>
-                    <Link to ="" className="dropdown-item"   >
-                      Another action
-                    </Link>
-                  </li>
-                  <li>
-                    <Link to ="" className="dropdown-item"   >
-                      Something else here
-                    </Link>
-                  </li>
-                </ul>
-              </li>
+              
               {user?.email === "mariyayasmeen000@gmail.com" && (
         <li className="nav-item link-hover">
           <Link to="/admindashboard" className="nav-link">Dashboard</Link>

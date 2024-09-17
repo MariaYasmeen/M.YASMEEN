@@ -1,7 +1,6 @@
 import { createSlice } from "@reduxjs/toolkit";
 
-
-const initialState = JSON.parse(localStorage.getItem('wishlist'))  ?? [];
+const initialState = JSON.parse(localStorage.getItem('wishlist')) ?? [];
 
 const wishlistSlice = createSlice({
     name: 'wishlist',
@@ -9,8 +8,8 @@ const wishlistSlice = createSlice({
     reducers: {
         addToWishlist(state, action) {
             const newItem = action.payload;
-            state.push(newItem); // Ensure you handle the timestamp correctly
-          },
+            state.push(newItem); // Direct mutation is fine with Redux Toolkit
+        },
         delFromWishlist(state, action) {
             return state.filter(item => item.id !== action.payload.id);
         },

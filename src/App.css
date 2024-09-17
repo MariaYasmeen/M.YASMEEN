@@ -419,3 +419,55 @@ padding: 5px;
   padding: 13px 126px; 
 box-shadow: none !important;
 }
+
+
+/* Container for quantity buttons */
+.col {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.1rem; /* Space between buttons and quantity display */
+}
+
+/* Style for quantity buttons */
+.quantity-button {
+  background-color: #f0f0f0; /* Light background color */
+  border: 1px solid #ccc; /* Light border color */
+  border-radius: 50%;
+  padding:3px 11px; /* Padding for buttons */
+  font-size: 1rem; /* Font size */
+  cursor: pointer; /* Pointer cursor on hover */
+  transition: background-color 0.3s ease, transform 0.2s ease; /* Smooth transitions */
+}
+
+/* Hover effect for buttons */
+.quantity-button:hover {
+  background-color: #e0e0e0; /* Slightly darker background on hover */
+}
+
+/* Active effect for buttons */
+.quantity-button:active {
+  background-color: #d0d0d0; /* Even darker background on click */
+  transform: scale(0.95); /* Slightly shrink button on click */
+}
+
+/* Style for quantity display */
+.quantity {
+  font-size: 1.1rem; /* Larger font size for quantity */
+  font-weight: bold; /* Bold font weight */
+  padding: 0 0.5rem; /* Horizontal padding */
+  text-align: center; /* Center align text */
+}
+
+/* Responsive design */
+@media (max-width: 600px) {
+  .quantity-button {
+    padding: 0.4rem 0.8rem; /* Smaller padding on smaller screens */
+    font-size: 0.9rem; /* Smaller font size on smaller screens */
+  }
+
+  .quantity {
+    font-size: 1rem; /* Adjust font size for smaller screens */
+    padding: 0 0.5rem; /* Adjust horizontal padding */
+  }
+}

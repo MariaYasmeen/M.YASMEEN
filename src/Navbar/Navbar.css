@@ -2,8 +2,8 @@
   /* Navbar.css */
   .cart-badge {
     position: absolute;
-    top: -9px;
-    right: -3px;
+    top: -1px;
+    right: -1px;
     background-color: darkred;
     color: white;
     border-radius: 50%;

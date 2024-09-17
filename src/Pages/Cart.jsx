@@ -110,28 +110,29 @@ export const Cart = () => {
                         <img className="img-fluid" src={image1} alt={title} />
                       </Link>
                     </div>
-                    <div className="col">
+                    <div className=" col" >
                       <Link to={`/product/${slug}`}>
                         <div className="row text-muted">{title}</div>
                       </Link>
-                      <div className="row">{code}</div>
+                      <div className="col">{code}</div>
                       <div className="row">PKR {price}</div>
                     </div>
-                    <div className="col">
-                      <button
-                        className="quantity-button"
-                        onClick={() => handleQuantityChange(item, quantity - 1)}
-                      >
-                        -
-                      </button>
-                      <span className="quantity">{quantity}</span>
-                      <button
-                        className="quantity-button"
-                        onClick={() => handleQuantityChange(item, quantity + 1)}
-                      >
-                        +
-                      </button>
-                    </div>
+                  <div className="col">
+  <button
+    className="quantity-button"
+    onClick={() => handleQuantityChange(item, quantity - 1)}
+  >
+    -
+  </button>
+  <span className="quantity">{quantity}</span>
+  <button
+    className="quantity-button"
+    onClick={() => handleQuantityChange(item, quantity + 1)}
+  >
+    +
+  </button>
+</div>
+
                     <div className="col">
                       <button
                         onClick={() => dispatch(delFromCart(item))}
