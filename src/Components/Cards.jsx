@@ -2,6 +2,11 @@ import React from "react";
 import BoxButton from "../Animations/BoxButton";
 import Image from "../ImgSliders/Image";
 
+
+import x1 from "../assets/5x5-1.png";
+import x2 from "../assets//5x5-2.png"; 
+import kidswear from "../assets//kidswear.webp";
+
 export const Cards = () => {
     return (
         <>
@@ -13,7 +18,7 @@ export const Cards = () => {
       </div>
       <div className="col-md-5 " style={{paddingTop:"10px"}}>
       <Image
-              imageSrc="/5x5-1.png"
+              imageSrc={x1}
                               heading="couture"
                     subheading="Discover the beauty"
                     buttonText="VIEW COLLECTION"
@@ -25,7 +30,7 @@ export const Cards = () => {
 
       <div className="col-md-5" style={{paddingBottom:"7px"}}>
       <Image
-              imageSrc="/5x5-2.png"
+              imageSrc={x2}
                               heading="lUXURY PRET"
                     subheading="Discover the beauty"
                     buttonText="VIEW COLLECTION"
@@ -65,7 +70,7 @@ export const Cards = () => {
                 </div>
                 <Image
                 style={{ padding:" 20px 35px 10px 35px" }} 
-        imageSrc="kidswear.webp"
+        imageSrc={kidswear}
         heading="KIDSWEAR"
         subheading="Dress the Cute & Comfy Outfits. Little Styles Awaits here."
         buttonText="VIEW COLLECTION"

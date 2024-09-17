@@ -8,7 +8,7 @@ import './Navbar.css'; // Import the CSS file for styling
 
 import slick2 from "../assets/slick2.png";
 import luxpret from "../assets/luxpt.png";
-import womenwear from "../assets/unstit.jpg";
+import image3 from "../assets/3.jpg";
 
 
 
@@ -209,10 +209,27 @@ const wishlistItems = useSelector((state) => state.wishlist);
                   menswear
                 </Link>
               </li>
-              <li className="nav-item link-hover ">
-                <Link to ="/couture" className="nav-link active" aria-current="page"   >
-                  couture
+              <li className=" link-hover dropdown">
+                <Link to ="/couture"
+                  className="nav-link dropdown-toggle"     
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                 couture
                 </Link>
+                <ul className="dropdown-menu">
+                  <li>
+                    <Link to ="/couture" className="dropdown-item "   >
+                      <img src={image3} style={{ width: "270px" }} alt="Dropdown Item" />
+                    </Link>
+                  </li>
+                  <li>
+      <Link to="/couture" className="dropdown-item">
+       Women Couture
+      </Link>
+    </li>
+   
+                </ul>
               </li>
 
               <li className="nav-item link-hover">
