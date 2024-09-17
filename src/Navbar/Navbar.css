@@ -1,0 +1,232 @@
+
+  /* Navbar.css */
+  .cart-badge {
+    position: absolute;
+    top: -9px;
+    right: -3px;
+    background-color: darkred;
+    color: white;
+    border-radius: 50%;
+    padding: 2px 5px;
+    font-size: 10px;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-width: 16px;
+    height: 16px;
+  }
+  
+  nav{
+    margin-bottom: 10px;
+  }
+  .nav-links li{
+    list-style: none;
+  }
+
+  .nav-links li a{
+    color: #000;
+    text-decoration: none;
+    font-size: 15px;
+    text-transform: uppercase;
+    padding: 5px 17px;
+    letter-spacing: 2px;
+    border-bottom: 2px solid white;
+    transition: all 0.3s ease;
+  }
+  
+  .ulcss li a{
+    color: #000;
+    font-size: 15px;
+    border-radius: none;
+    text-transform: uppercase;
+    letter-spacing: 2.3px;
+    border-bottom: 2px solid white;
+    transition: all 0.3s ease;
+  }
+  .nav-links li a:hover{
+    border-bottom: 2px solid black;
+    color: #000;
+  }
+
+  .ulcss li a:hover{
+    border-bottom: 2px solid black;
+    color: #000;
+  }
+  
+  .nav-links .drop-menu{
+    position: absolute;
+    background-color: white;
+    width: 180px;
+    line-height: 45px;
+    top: 15px;
+    color: black;
+    opacity: 0;
+    visibility: hidden;
+    box-shadow: 0 6px 10px rgba(0,0,0,0.15);
+  }
+
+  .fa-iconcss i{
+    font-size: 21px;
+    padding: 7px;
+    color: black;
+    }
+
+    .dropdown-menu{
+      border: 0px !important;
+      border-radius: 0px !important;
+      box-shadow: 0 6px 10px rgba(0,0,0,0.15);
+    }
+    .dropdown-menu img{
+      box-shadow: 0 6px 10px rgba(0,0,0,0.15);
+    }
+
+.navbar {
+    position: relative; 
+    z-index: 1000; /* High z-index value to ensure it appears on top */
+    color: black;
+    height: 34px;
+    width: 100%;
+    background-color: white; /* Default background color */
+  }
+  
+  .navbar-toggler {
+    z-index: 100; /* Change this color for the icon */
+  }
+  .top-strip{
+    height:"70px" !important;
+  }
+
+  .top-strip div{
+    font-size: 11px ;
+    letter-spacing: 1px;
+    padding: 8px;
+  }
+  .navbar-collapse {
+    z-index: 1000; /* Ensure collapsed menu is on top */
+    position: relative; 
+    color: white;
+    background-color: white; 
+  }
+  .position-relative {
+    position: relative;
+  }
+  
+  .navbar {
+    color: black;
+    height: 35px;
+  }
+  
+  .navbar-toggler {
+    border-color: none !important;
+  }
+
+  .nav-link {
+    color: black;
+    padding: 8px 15px;
+    transition: color 0.3s ease;
+  }
+  
+  
+  .dropdown-item {
+    color: black;
+    border: none !important;
+    transition: background-color 0.3s ease;
+  }
+  
+  .dropdown-item:hover {
+    background-color: white;
+    color: #007bff; /* Change this color to your desired hover color */
+  }
+  
+
+  .position-relative {
+    position: relative;
+  }
+
+  /* General Navbar Styles */
+
+
+.navbar-toggler,
+.navbar-toggler:focus,
+.navbar-toggler:active {
+    color: black !important;
+  outline: none !important; /* Remove default focus outline */
+  box-shadow: none !important; /* Remove any box-shadow effects */
+  border: none !important; /* Remove any border */
+}
+  .nav-link {
+    color: black;
+    padding: 8px 10px;
+    transition: color 0.3s ease;
+  }
+  
+  .nav-link:hover {
+    color: #007bff; /* Change this color to your desired hover color */
+  }
+  
+  .navbar-nav .dropdown:hover .dropdown-menu {
+    display: block;
+    margin-top: 0;
+    transition: all 0.5s ease-in-out; /* Add smooth transition */
+  }
+  
+  .dropdown-menu {
+    display: none; /* Hide the dropdown by default */
+    position: absolute;
+    will-change: transform;
+  }
+  
+  .dropdown-item {
+    color: black;
+    transition: background-color 0.3s ease;
+  }
+
+  .position-relative {
+    position: relative;
+  }
+  
+  @media (max-width: 991.98px) {
+    .navbar {
+      width: 50%;
+      padding: 0px !important; /* Dark background for collapsed navbar */
+    }
+  .top-strip{
+    display: none !important;
+  }
+    .navbar-nav {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      margin: 2px;
+      padding: 42px; /* Dark background for collapsed items */
+    }
+  
+    .nav-link {
+      color: white;
+      margin: 3px;
+      padding: 20px 10px;
+      width: 100%;
+      text-align: left;
+    }
+  
+    .nav-link:hover {
+    border: none;
+    }
+  
+    .dropdown-menu {
+      position: static;
+      float: none; /* Darker background for dropdown */
+      width: 100%;
+      border-radius: 0;
+      margin-top: 0;
+    }
+  
+    .dropdown-item {
+      color: white;
+      padding: 10px 15px;
+    }
+  
+   
+  }
+  

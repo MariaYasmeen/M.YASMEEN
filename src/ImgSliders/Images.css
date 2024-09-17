@@ -1,0 +1,408 @@
+.slider-container {
+  width: auto;
+}
+.slider-container div img{
+  padding: 3px;
+  
+}
+.slider-container div h3{
+  font-size: 13px;
+}
+.slider-container img{
+  border-radius: 0%;
+}
+
+.slick-slide h3 {
+  text-align: center;
+}
+
+.mariabslider{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.image-hover-card {
+  position: relative;
+  overflow: hidden;
+  cursor: pointer;
+}
+
+.image-container {
+  position: relative;
+}
+
+.card-image {
+  width: 100%;
+  height: auto; /* Allow height to adjust based on image aspect ratio */
+  object-fit: cover;
+  transition: transform 0.3s ease;
+}
+
+.image-hover-card:hover .card-image {
+  transform: scale(1.1); /* Zoom effect */
+}
+
+.overlay {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 30%;
+  width: 100%;
+  background: rgba(0, 0, 0, 0.3); /* Semi-transparent overlay */
+  transform: translateY(96%);
+  transition: transform 0.5s ease;
+}  
+
+.image-hover-card:hover .overlay {
+  transform: translateX(0); /* Slide the text up */
+}
+.text {
+  color: white;
+  position: absolute;
+  bottom: 10%;
+  left: 59%;
+  transform: translateX(-50%);
+  width: 100%;
+  padding: 20px;
+  transition: all 0.5s ease;
+}
+ 
+h2 {
+  margin: 0;
+  font-size: 1.5em;
+}
+
+p {
+  margin: 10px 0;
+}
+
+.action-button {
+  padding: 12px 27px;
+  text-decoration: none;
+  background-color: transparent;
+  color: white;
+  border: 1px solid white;
+  border-radius: 29px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.action-button:hover {
+  border-color: #000;
+  border-radius: 0px;
+  background-color: black;
+}
+
+/*---------------------------------------- Base styling for the hover card */
+/* Base styling for the hover card */
+.stylish-hover-card {
+  position: relative;
+  display: inline-block;
+  overflow: hidden;
+  transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+.stylish-hover-card:hover {
+  transform: scale(1.05);
+}
+
+/* Styling for the image */
+.image-wrap {
+  position: relative;
+}
+
+.styled-image {
+  width: 100%;
+  height: auto; /* Allow height to adjust based on image aspect ratio */
+  object-fit: cover;
+  transition: transform 0.3s ease;
+}
+
+.stylish-hover-card:hover  {
+  transform: scale(1.1); /* Slightly zoom the image */
+  filter: brightness(100%); /* Darken the image */
+}
+
+.hover-overlay {
+  position: absolute;
+  top: 10;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  transform: translateY(100%);
+  transition: transform 0.3s ease-in-out, opacity 0.3s ease-in-out;
+}
+
+.stylish-hover-card:hover .hover-overlay {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+
+.overlay-heading {
+  font-size: 2.5rem;
+  margin-bottom: 10px;
+  animation: fadeInUp 0.5s ease-out;
+}
+
+.overlay-subheading {
+  font-size: 1.5rem;
+  margin-bottom: 20px;
+  animation: fadeInUp 0.7s ease-out;
+}
+
+.overlay-button {
+  padding: 6px 15px;
+  font-size: 1.1rem;
+  color: #fff;
+  background-color:black;
+  border: none;
+   cursor: pointer;
+  transition: background-color 0.3s ease-in-out, transform 0.3s ease-in-out;
+}
+
+/* Keyframes for animations */
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(-100px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+
+
+.hoverimgslider div{
+text-transform: uppercase;
+font-size: 14px;
+}
+
+
+
+/* ProductCard.css */
+
+.product-card {
+width: 400px;
+overflow: hidden;
+transition: transform 0.3s ease;
+margin-bottom: 10px !important; 
+box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Light grey shadow */
+flex-shrink: 0; /* Prevent shrinking */float: left; 
+}
+
+@media(max-width:600px){
+  .product-card{
+    width: 400px;
+  }
+}
+
+.cart{
+  background-color: #fff;
+  padding: 4vh 5vh;
+}
+
+.product-image {
+position: relative;
+width: 100%;
+height: 580px;
+overflow: hidden;
+}
+
+.product-image img {
+width: 100%;
+height: 100%;
+object-fit: cover;
+transition: transform 0.3s ease;
+}
+
+.product-image .buy-button {
+position: absolute;
+bottom: 0;
+left: 0;
+right: 0;
+color: #fff;
+border: none;
+padding: 3px;
+margin: 10px 10px 18px 8px;
+font-size: 16px;
+cursor: pointer;
+opacity: 0;
+transition: opacity 0.3s ease;
+}
+
+.product-card:hover .product-image .buy-button {
+opacity: 1;
+}
+
+.product-details {
+padding: 16px;
+}
+
+.product-details h2 {
+font-size: 18px;
+margin: 0;
+margin-bottom: 8px;
+}
+
+.product-details p {
+margin: 0;
+color: #555;
+}
+
+.product-info {
+display: flex;
+justify-content: space-between;
+align-items: center;
+margin-top: 8px;
+}
+
+.product-info .price {
+font-weight: bold;
+color: #000;
+}
+
+/* Parent class for flexbox grid layout */
+
+.product-grid {
+display: flex;
+flex-wrap: wrap;
+justify-content: center; /* Optional: center align the cards */
+gap: 6px; /* Spacing between product cards */
+margin: 0 auto; /* Center the grid container */
+}
+
+@media(max-width:600px){
+  .image-slider {
+    flex-direction: column;
+  }    
+}
+
+.image-slider {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  max-width: 95%;
+  overflow: hidden;
+}
+
+.display-image {
+  flex: 3;
+  transition: transform 0.3s ease-in-out;
+}
+
+.display-image img {
+  width: 100%;
+  height: auto;
+  margin: 0px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+}
+
+.thumbnail-container {
+  flex: 1;
+  margin-right: 5px;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: 70px;
+}
+
+@media(max-width:1000px){
+
+  .thumbnail-container {
+    flex-direction: row !important;
+    padding: 0px !important;
+  }
+
+  .thumbnail img {
+    width: 90% !important;
+    margin: 10px 5px 0px 10px !important;
+  } 
+  .image-slider  {
+    flex-direction: column-reverse;  } 
+  .display-image img {
+    width: 90% !important;
+  }
+  .thumbnail-container {
+    max-width: 190px !important;
+  }
+ 
+}
+
+.thumbnail {
+  margin: 0rem  0rem 0rem 0rem ;
+  cursor: pointer;
+  transition: transform 0.3s ease-in-out;
+}
+
+.thumbnail img {
+  width: 100%;
+  padding: 0px;
+  margin-top: 6px;
+  margin-bottom: 10px;
+  height: auto;
+  opacity: 0.7 grey;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+}
+
+.thumbnail.active img {
+  border: 3px solid black;
+  padding: 2px;
+  transform: scale(1.1);
+  opacity: 1;
+}
+
+.thumbnail:hover img {
+  transform: scale(1.05);
+}
+
+.zoom-wrapper {
+  position: relative;
+  display: inline-block;
+}
+
+.zoom-wrapper img {
+  display: block;
+  width: 96%;
+  height: auto;
+  cursor: zoom-in;
+}
+
+.zoom-container {
+  position: relative;
+  overflow: hidden;
+  display: inline-block;
+}
+
+.zoom-image {
+  transition: transform 0.3s ease;
+  width: 100%;
+  height: auto;
+}
+
+.zoom-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 96%;
+  height: 100%;
+  pointer-events: none;
+  transition: opacity 0.3s ease;
+  opacity: 0;
+}
+
+.zoom-overlay.zoom {
+  opacity: 1;
+}
+
