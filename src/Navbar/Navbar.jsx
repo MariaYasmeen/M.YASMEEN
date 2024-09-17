@@ -7,7 +7,7 @@ import { useSelector } from "react-redux";
 import './Navbar.css'; // Import the CSS file for styling
 
 import slick2 from "../assets/slick2.png";
-import luxpret from "../assets/luxpt.png";
+import jewelry from "../assets/jew.png";
 import image3 from "../assets/3.jpg";
 
 
@@ -247,7 +247,7 @@ const wishlistItems = useSelector((state) => state.wishlist);
                 <ul className="dropdown-menu">
                   <li>
                     <Link to ="" className="dropdown-item"   >
-                      <img src={luxpret} style={{ width: "250px" }} alt="Dropdown Item" />
+                      <img src={jewelry} style={{ width: "250px" }} alt="Dropdown Item" />
                     </Link>
                   </li>
                   <li>
