@@ -6,8 +6,7 @@ import { Navbar } from "../Navbar/Navbar";
 import { Footer } from "../Components/Footer";
 import LoaderSc from "../Components/LoaderSc";
 import { Helmet } from "react-helmet-async";
-import Filter from "../Components/Filter";
-
+ 
 const Jewelry = () => {
   const { category } = useParams();
   const navigate = useNavigate();
@@ -29,11 +28,11 @@ const Jewelry = () => {
   return (
     <div>
       <Helmet>
-        <title>Ready To Wear - {category} - M.Yasmeen</title>
+        <title>Jewelry - {category} - M.Yasmeen</title>
         <meta name="description" content={`Explore new Ready To Wear Collection. Now Available Online and in Stores`} />
       </Helmet>
       <Navbar onCategoryChange={handleCategoryChange} />
-      <h5 className="text-center" styl={{paddding:"4px"}}>Ready to Wear - {category.replace(/-/g, ' ')}</h5>
+      <h5 className="text-center" styl={{paddding:"4px"}}>Jewelry - {category.replace(/-/g, ' ')}</h5>
       <div className="product-grid">
         {products.map((product) => (
           <ProductCard

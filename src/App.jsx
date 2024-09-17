@@ -27,6 +27,8 @@ import ReadyToWear from "./Pages/ReadyToWear";
 import Unstitched from "./Pages/Unstitched";
 import DeleteCollection from "./FBDatabase/DeleteCollection";
 import ShopedItems from "./Pages/ShopedItems";
+import RTWHomePg from "./Pages/RTWHomePg";
+import JHomePg from "./Pages/JHomePg";
 
 const App = () => {
   return (
@@ -41,6 +43,8 @@ const App = () => {
         <Route path="/search" element={<SearchPage />} />
         <Route path="/account/*" element={<Account />} />
         <Route path="/register" element={<Register />} />
+        <Route path="/readytowear" element={<RTWHomePg />} />
+        <Route path="/jewelry" element={<JHomePg />} />
         <Route path="/bag" element={<Cart />} />
         <Route path="/:category" element={<ReadyToWear />} />
         <Route path="/:category" element={<Jewelry />} />

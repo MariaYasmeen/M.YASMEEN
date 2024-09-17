@@ -11,41 +11,40 @@ export const Cards = () => {
     return (
         <>
 <div className="row featurette centerectextimg">
-      <div className="col-md-7 textcenter">
-        <h2 className="featurette-heading  fw-normal lh-1">Where Fashion Journey Begins ...</h2>
-        <p className="lead text-center">Why settle for ordinary when you can have extraordinary? Our everyday essentials are designed to bring style and comfort to your daily routine. Start your fashion adventure today and explore the endless possibilities. Transform your look and make a statement wherever you go.</p>
-        <BoxButton buttonName="see collection" class />
-      </div>
-      <div className="col-md-5 " style={{paddingTop:"10px"}}>
-      <Image
-              imageSrc={x1}
-                              heading="couture"
-                    subheading="Discover the beauty"
-                    buttonText="VIEW COLLECTION"
-                    link="/couture"
-                  />
-      </div>
-    </div>
-    <div className="row featurette centerectextimg">
+  <div className="col-12 col-md-7 textcenter order-2 order-md-1">
+    <h2 className="featurette-heading fw-normal lh-1">Where Fashion Journey Begins ...</h2>
+    <p className="lead text-center">Why settle for ordinary when you can have extraordinary? Our everyday essentials are designed to bring style and comfort to your daily routine. Start your fashion adventure today and explore the endless possibilities. Transform your look and make a statement wherever you go.</p>
+    <BoxButton buttonName="see collection" 
+     path="/luxury-pret" />
+  </div>
+  <div className="col-12 col-md-5 order-1 order-md-2" style={{ paddingTop: "10px" }}>
+    <Image
+      imageSrc={x1}
+      heading="Luxury Pret"
+      subheading="Discover the beauty"
+      buttonText="VIEW COLLECTION"
+      link="/luxury-pret"
+    />
+  </div>
+</div>
 
-      <div className="col-md-5" style={{paddingBottom:"7px"}}>
-      <Image
-              imageSrc={x2}
-                              heading="lUXURY PRET"
-                    subheading="Discover the beauty"
-                    buttonText="VIEW COLLECTION"
-                    link="/luxury-pret"
-                  />
-      </div>
-      <div className="col-md-7 textcenter">
-        <h2 className="featurette-heading fw-normal lh-1 text-body-primary">Embrace the Latest Trends</h2>
-        <p className="lead text-center">
-        Create a wardrobe that truly reflects your personality with our versatile pieces. Mix and match to curate a style that’s uniquely yours. From bold patterns to classic silhouettes, our collections offer endless possibilities for self-expression.
-       </p>
-       <BoxButton buttonName="See Collection" />
-      </div>
-    </div>
-
+<div className="row featurette centerectextimg">
+  <div className="col-12 col-md-5 order-1 order-md-1" style={{ paddingBottom: "7px" }}>
+    <Image
+      imageSrc={x2}
+      heading="Luxury Pret"
+      subheading="Discover the beauty"
+      buttonText="VIEW COLLECTION"
+      link="/luxury-pret"
+    />
+  </div>
+  <div className="col-12 col-md-7 textcenter order-2 order-md-2">
+    <h2 className="featurette-heading fw-normal lh-1 text-body-primary">Embrace the Latest Trends</h2>
+    <p className="lead text-center">Create a wardrobe that truly reflects your personality with our versatile pieces. Mix and match to curate a style that’s uniquely yours. From bold patterns to classic silhouettes, our collections offer endless possibilities for self-expression.</p>
+    <BoxButton buttonName="See Collection" 
+     path="/luxury-pret" />
+  </div>
+</div>
 
 
 
@@ -57,6 +56,7 @@ export const Cards = () => {
                         heading="UNSTITCHED"
                         subheading="Unleash your creativity with unstitched pieces, ready for your design."
                         buttonText="FIND YOUR STYLE"
+                          link="/unstitched"
                       /> </div>
              <div style={{ padding:"5px"}}   > 
              <Image
@@ -64,6 +64,7 @@ export const Cards = () => {
                         heading="READY TO WEAR"
                         subheading="No time to stitch? Our ready-to-wear has you covered in style."
                         buttonText="FASHION BEGINS HERE"
+                          link="/readytowear"
                       /> 
                </div>
                </div>
@@ -74,6 +75,7 @@ export const Cards = () => {
         heading="KIDSWEAR"
         subheading="Dress the Cute & Comfy Outfits. Little Styles Awaits here."
         buttonText="VIEW COLLECTION"
+          link="/kidswear"
       />
                 <div className="mariabslider"  >
                 <div className="d-md-flex " >
@@ -83,6 +85,7 @@ export const Cards = () => {
                         heading="COUTURE"
                         subheading="Step into luxury with our exclusive couture designs, made with love"
                         buttonText="VIEW COLLECTION"
+                          link="/couture"
                       /> </div>
                    <div  style={{  padding:"5px"}}
                         >  <Image
@@ -90,6 +93,7 @@ export const Cards = () => {
                         heading="MENSWEAR"
                         subheading="Redefine your style with our premium menswear, crafted for you."
                         buttonText="VIEW COLLECTION"
+                          link="/menswear"
 
 />
 </div>

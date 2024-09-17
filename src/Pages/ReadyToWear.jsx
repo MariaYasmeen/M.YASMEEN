@@ -33,7 +33,7 @@ const ReadyToWear = () => {
         <meta name="description" content={`Explore new Ready To Wear Collection. Now Available Online and in Stores`} />
       </Helmet>
       <Navbar onCategoryChange={handleCategoryChange} />
-      <h5 className="text-center" styl={{paddding:"4px"}}>Ready to Wear - {category.replace(/-/g, ' ')}</h5>
+      <h5 className="text-center py-4" >Ready to Wear - {category.replace(/-/g, ' ')}</h5>
       <div className="product-grid">
         {products.map((product) => (
           <ProductCard

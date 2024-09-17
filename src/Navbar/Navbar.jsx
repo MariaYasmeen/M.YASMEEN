@@ -169,16 +169,15 @@ const wishlistItems = useSelector((state) => state.wishlist);
               </li>
           
               <li className=" link-hover dropdown">
-                <Link to =""
+                <Link to="/readytowear"
                   className="nav-link dropdown-toggle"     
                   data-bs-toggle="dropdown"
-                  aria-expanded="false"
-                >
+                 >
                   ready to wear
                 </Link>
                 <ul className="dropdown-menu">
                   <li>
-                    <Link to ="" className="dropdown-item "   >
+                    <Link to="/readytowear" className="dropdown-item "   >
                       <img src={slick2} style={{ width: "270px" }} alt="Dropdown Item" />
                     </Link>
                   </li>
@@ -246,7 +245,7 @@ const wishlistItems = useSelector((state) => state.wishlist);
                 </Link>
                 <ul className="dropdown-menu">
                   <li>
-                    <Link to ="" className="dropdown-item"   >
+                    <Link to ="/jewelry" className="dropdown-item"   >
                       <img src={jewelry} style={{ width: "250px" }} alt="Dropdown Item" />
                     </Link>
                   </li>

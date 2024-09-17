@@ -471,3 +471,24 @@ box-shadow: none !important;
     padding: 0 0.5rem; /* Adjust horizontal padding */
   }
 }
+
+/* Full-screen hero section */
+.hero-section {
+  position: relative;
+  overflow: hidden;
+}
+
+/* Full-screen images */
+.hero-image {
+  width: 100vw;
+  height: 100vh;
+  background-size: cover;
+  background-position: center;
+  transition: opacity 1s ease-in-out;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+ 
+

@@ -1,10 +1,10 @@
 import React from 'react';
 import './AnimationCss.css'; // Make sure to import your CSS file
 
-const BoxButton = ({ buttonName }) => {
+const BoxButton = ({ buttonName, path }) => {
   return (
     <div className="container">
-      <a href="#" className="button type--A">
+      <a href={path} className="button type--A">
         <div className="button__line"></div>
         <div className="button__line"></div>
         <span className="button__text">{buttonName}</span>
